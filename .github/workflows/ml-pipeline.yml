@@ -21,11 +21,11 @@ jobs:
     
     - name: Train model
       run: |
-        python src/train.py
+        PYTHONPATH=$PYTHONPATH:$(pwd) python src/train.py
     
     - name: Run tests
       run: |
-        pytest tests/ -v
+        PYTHONPATH=$PYTHONPATH:$(pwd) pytest tests/ -v
     
     - name: Upload trained model
       uses: actions/upload-artifact@v4
