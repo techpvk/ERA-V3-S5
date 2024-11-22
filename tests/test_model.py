@@ -14,7 +14,7 @@ def test_model_parameters():
     assert param_count < 25000, f"Model has {param_count} parameters, which exceeds the limit of 25000"
 
 def test_model_accuracy():
-    config = TrainingConfig(batch_size=1000)
+    config = TrainingConfig(batch_size=512)
     model = MNISTModel(ModelConfig())
     
     models_dir = 'models'
