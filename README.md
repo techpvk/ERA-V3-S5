@@ -12,7 +12,7 @@ This project implements a CNN-based model for MNIST digit classification with:
 - Automated testing framework
 
 ## Model Architecture
-
+![Model Architecture](image.png)
 The model uses a simple but effective CNN architecture:
 - 2 Convolutional layers with batch normalization
 - MaxPooling layers
