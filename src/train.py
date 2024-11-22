@@ -171,7 +171,7 @@ def train(config: TrainingConfig = TrainingConfig()):
 
 if __name__ == "__main__":
     config = TrainingConfig(
-        batch_size=512,
+        batch_size=64,
         learning_rate=0.001,
         epochs=1
     )
