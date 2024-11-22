@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from torchinfo import torchinfo
-from config import ModelConfig
+from src.config import ModelConfig
 
 class MNISTModel(nn.Module):
     def __init__(self, config: ModelConfig):
